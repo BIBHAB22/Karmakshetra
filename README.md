@@ -197,13 +197,6 @@ Meet the awesome people who have contributed to this project:
       </a>
     </td>
     <td align="center">
-      <a href="https://github.com/Ritam0">
-        <img src="https://avatars.githubusercontent.com/u/115490395?v=4" width="100px;" alt="Shouvik2" style="border-radius:50%"/>
-        <br />
-        <sub><b>Ritam Majumder</b></sub>
-      </a>
-    </td>
-    <td align="center">
       <a href="https://github.com/https://github.com/Dibyajyoti011">
         <img src="https://avatars.githubusercontent.com/u/116632776?v=4" width="100px;" alt="moh-15" style="border-radius:60%"/>
         <br />
