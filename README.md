@@ -115,7 +115,7 @@ That’s why I present you this amazing project named India Aura.
 - <img src = "https://img.icons8.com/?size=512&id=74402&format=png" height=40px width=40px> **Mongo DB**- for Database Service <br>
 
 - <img src="https://logowik.com/content/uploads/images/npm-inc7007.logowik.com.webp" height=40px width=40px/> **NPM** - Node Package manager<br>
-- <img src="https://w7.pngwing.com/pngs/81/2/png-transparent-cloudinary-hd-logo.png="  width=40px/> **Cloudinary** - Cloud Services <br>
+- <img src="https://s3.amazonaws.com/awsmp-logos/cloudinary.png"  width=40px/> **Cloudinary** - Cloud Services <br>
 
 - <img src = "https://seeklogo.com/images/R/render-logo-818C47ACCA-seeklogo.com.png"  width=40px> **Render** or Project Deployment<br>
 
