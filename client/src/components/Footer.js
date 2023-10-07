@@ -1,8 +1,8 @@
 import React from 'react'
 import './Footer.css';
-import ritam from "./image/ritam.jpg"
-import bibhab from "./image/bibhab.jpg"
-import Dibyajyoti from "./image/Dibyajyoti.jpg"
+import ritam from "./image/profile pics/ritam.jpg"
+import bibhab from "./image/profile pics/bibhab.jpg"
+import Dibyajyoti from "./image/profile pics/Dibyajyoti.jpg"
 
 
 
