@@ -41,44 +41,47 @@
 
 🚀 Travel Web Application
 
-🚀 *Home Screen*
+🚀 **Home Screen**
 
 <div align="center">
   <img src="client\src\components\image\readme images\homepage.png" alt="pic" align="center" style="width: 100%;" />
 </div>
-🚀 *Dream Tour Destination*
+
+🚀 **Dream Tour Destination**
 
 <div align="center">
   <img src="client\src\components\image\readme images\dreamtour.png" alt="pic" align="center" style="width: 100%;" />
 </div>
-🚀 *Vacation_page*
+
+🚀  **Vacation_page**
 
 <div align="center">
   <img src="client\src\components\image\readme images\vaccation.png" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-🚀 *Beach_page*
+🚀 **Beach_page**
 
 <div align="center">
   <img src="client\src\components\image\readme images\beach.png" alt="pic" align="center" style="width: 100%;" />
 </div>
-🚀 *Blog*
+
+🚀 **Blog**
 <div align="center">
   <img src="client\src\components\image\readme images\blog.png" alt="pic" align="center" style="width: 100%;" />
 </div>
 
-
-🚀 *Chat Bot*
-
+🚀 **Chat bot**
 <div align="center">
   <img src="client\src\components\image\readme images\chatbot.png" alt="pic" align="center" style="width: 100%;" />
 </div>
-🚀*Register_page*
+
+🚀 **Register_page**
 
 <div align="center">
   <img src="client\src\components\image\readme images\registration.png" alt="pic" align="center" style="width: 100%;" />
 </div>
-🚀 *Login_page*
+
+🚀 **Login_page**
 
 <div align="center">
   <img src="client\src\components\image\readme images\login.png" alt="pic" align="center" style="width: 100%;" />
@@ -100,9 +103,6 @@ India is the most beautiful country in the world ,the Himalayan mountains beache
 Dubai is a City but 16.9 million tourists come to Dubai every year but in India as a country have  only 10 million that's it. 
 and this impacts our hotels and our businesses and our economy. The country is ours and if we want to become a superpower we need to grow our economy.
 That’s why I present you this amazing project named India Aura.
-
-![WhatsApp Image 2023-08-28 at 20 25 35](https://github.com/BIBHAB22/Inter-hacktive/assets/113331341/3ec6ccaf-139e-44c1-837f-8dac5c427aa7)
-
 
 
 ## 🛠️Tech Stack
