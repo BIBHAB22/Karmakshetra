@@ -1,0 +1,131 @@
+/* Tourism Page Styles */
+
+.Wildlife-page-container{
+    margin-top: 80px;
+  }
+  
+  .Wildlife-page-container h1 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    padding: 20px;
+  }
+
+  .modal-content {
+    background-color: skyblue;
+    border-radius: 10px;
+    padding: 10px;
+  }
+
+   .Wildlife {
+    width: 600px;
+    height: 530px;
+    background-image: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    border-radius: 20px;
+    transition: all .3s;
+    border:5px solid blue;
+    margin: 20px;
+   }
+   .Wildlife2 {
+    width: 600px;
+    height: 530px;
+    display: flex;
+    background-color:white;
+    border-radius: 10px;
+    transition: all .2s;
+    padding: 20px;
+   }
+   
+   .Wildlife2:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+   }
+   
+   .Wildlife:hover {
+    box-shadow: 0px 0px 30px 1px rgba(0, 255, 117, 0.30);
+    border:0px
+   }
+  
+  .WildlifeDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .Wildlife-heading{
+    font-weight: 700;
+    font-size: 25px;
+    text-align: center;
+    color:black;
+  }
+  .Wildlife-description{
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+    color:black;
+  }
+  .Wildlife-image {
+    width: 525px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 30px;
+  }
+  
+  .Wildlife-content .btn {
+    color: #fff;
+    text-decoration: none;
+    margin-top: 20px;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .Wildlife::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 5px;
+    height: 100%;
+  }
+  
+  .Wildlife:hover::before {
+    width: 100%;
+  }
+  
+  .Wildlife:hover .btn {
+    color: #212121;
+    background: #e8e8e8;
+  }
+  
+  .Wildlife .btn:hover {
+    outline: 2px solid #e8e8e8;
+    background: transparent;
+    color: #b31616;
+  }
+  
+  .Wildlife .btn:active {
+    box-shadow: none;
+  }
+  /* Close button */
+  
+  
+  @media only screen and (max-width: 800px) {
+    .Wildlife {
+      padding: 20px;
+      width: 88vw;
+      justify-content: left;
+    }
+  
+    .Wildlife-heading {
+      font-size: 25px;
+    }
+  }
+  

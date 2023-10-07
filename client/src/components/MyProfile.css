@@ -1,0 +1,278 @@
+
+
+.myproflie_main_body {
+
+    /* border: 3px solid red; */
+    margin: 100px 0;
+    
+
+}
+
+.myproflie_main_body h1 {
+
+    /* border: 3px solid red; */
+    text-align: center;
+    color: rgb(13, 208, 222);
+
+}
+
+.myprofile_main_card {
+    /* border: 3px solid rgb(47, 0, 255); */
+    width: fit-content;
+    height: fit-content;
+    margin: 10px auto;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px 2px rgba(193, 5, 196, 0.667);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: #1cf3f33a;
+
+}
+
+.myprofile_main_card:hover {
+    box-shadow: 0 0 8px 2px rgba(0, 255, 200, 0.653);
+
+}
+
+.myprofile_pic_card {
+    /* border: 3px solid purple; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    font-size: 18px;
+    padding: 5px;
+    font-weight: bold;
+}
+.myprofile_pic_card p{
+    padding: 10px;
+}
+
+.myprofile_pic_card img {
+    /* border: 3px solid green; */
+    width: 250px;
+    border-radius: 50%;
+    box-shadow: 0 0 8px 2px rgb(24, 12, 186);
+}
+.myprofile_pic_card img:hover{
+    box-shadow: 0 0 8px 2px rgb(173, 4, 246);
+
+}
+
+.myprofile_right_sec {
+
+    /* border: 3px solid yellow; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.myprofile_right_sec h1 {
+
+    color: black;
+    font-size: 25px;
+}
+
+.myprofile_details {
+    /* border: 3px solid yellow; */
+    margin: 5px;
+    padding: 5px;
+}
+
+.myprofile_details ul {
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+    font-size: 16px;
+
+}
+
+.myprofile_details ul li {
+    margin: 10px;
+
+}
+
+.myproflie_btns {
+    /* border: 3px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    color: white;
+}
+
+.myproflie_button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    gap: 15px;
+    background-color: #181717;
+    outline: 3px #181717 solid;
+    outline-offset: -3px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 400ms;
+    margin: 5px;
+}
+
+.myproflie_button .text {
+    color: white;
+    font-weight: 700;
+    font-size: 1em;
+    transition: 400ms;
+}
+
+.myproflie_button svg path {
+    transition: 400ms;
+}
+
+.myproflie_button:hover {
+    background-color: transparent;
+}
+.mypfeedback_btn{
+    color: white;
+}
+
+.myproflie_button:hover .text {
+    color: #181717;
+    
+}
+
+.myproflie_button:hover svg path {
+    fill: #181717;
+}
+
+
+@media only screen and (max-width: 800px) {
+    .myprofile_main_card {
+        /* box-shadow: none; */
+        border-radius: 0;
+    }
+
+
+}
+
+/* BookingCardContainer.css */
+.booking-card-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .booking-card {
+    background-color: #1cf3f33a;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(36, 218, 197, 0.797);
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    width: 250px;
+  }
+  
+  .booking-card img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .booking-card h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .booking-card button {
+    margin-top: 15px;
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .booking-card button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    .booking-card {
+      width: 45%; /* Adjust as needed */
+    }
+  }
+/* ReadBlog.css */
+.booking-container {
+    text-align: center;
+    padding: 20px;
+    margin-top: 100px;
+  }
+  
+  .blogs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .booking-card {
+    width: 30%;
+    margin: 20px;
+    padding: 10px;
+    border: 2px solid transparent;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    transition: transform 0.2s, box-shadow 0.2s, border-color 0.3s;
+    position: relative;
+  }
+  
+  .booking-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    border-color: linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+  }
+  
+  .booking-card::before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    border: 2px solid transparent;
+    z-index: -1;
+    animation: borderAnimation 2s infinite alternate;
+  }
+  
+  @keyframes borderAnimation {
+    0% {
+      border-color: solid;
+    }
+    100% {
+      border-color:linear-gradient(163deg, #00ff75 0%, #3700ff 100%);
+    }
+  }
+  
+  .booking-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .booking-card h3 {
+    margin: 10px 0;
+  }
+  
+  .interaction {
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+  }  
