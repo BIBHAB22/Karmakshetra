@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import Navbar from './Navbar';
 import './Registration.css';
-import log_reg_page_pic from "./image/log_reg_page_pic.jpg";
 import { useNavigate } from 'react-router-dom';
 
 function RegistrationForm({ type }) {
@@ -21,7 +19,6 @@ function RegistrationForm({ type }) {
     formData.append('avatar', image);
 
     try {
-      const response = await axios.post('https://india-aura.onrender.com/register', formData);
 
       setName('');
       setEmail('');

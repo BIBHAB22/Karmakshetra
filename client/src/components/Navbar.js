@@ -5,8 +5,6 @@ import './Navbar.css';
 
 const Navbar = () => {
   const [ulVisible, setUlVisible] = useState(true);
-  
-  const[isLogged,setIsLogged]=useState('Login');
   // const token =localStorage.getItem('token');
   // if(token){
   //   setIsLogged('Profile');
@@ -21,13 +19,8 @@ const Navbar = () => {
 
       <nav className="navbar">
 
-        <div className="mobile">
-
-
-          
-            <img src={indiaauralogo} className="navbar-brand"></img>
-         
-
+        <div className="mobile">         
+        <img src={indiaauralogo} alt="India Aura Logo" className="navbar-brand" />
           <div className="tglbtn">
             <input type="checkbox" id="checkbox" onClick={handleToggleClick} />
             <label htmlFor="checkbox" className="toggle">

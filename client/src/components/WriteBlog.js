@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
-import axios from 'axios';
 import Navbar from './Navbar';
 import './Registration.css';
-import log_reg_page_pic from "./image/log_reg_page_pic.jpg";
 import { useNavigate } from 'react-router-dom';
 
 const WriteBlog = ({type}) => {
@@ -21,17 +19,7 @@ const WriteBlog = ({type}) => {
     formData.append('place', place); // Use 'email' instead of 'contact'
     formData.append('content',content);
     formData.append('thumbnail',thumbnail);
-    const FormToServer={
-      name:name,
-      title:title,
-      place:place,
-      content:content,
-      thuubmnail:thumbnail
-    };
-
-
     try {
-      const response = await axios.post('http://localhost:3001/upload-blog', FormToServer);
 
       setName('');
       setPlace('');
@@ -44,15 +32,6 @@ const WriteBlog = ({type}) => {
       window.alert('registration failed!! try again')
       console.error('Registration error:', error);
     }
-  };
-
-  const [imageUploaded, setImageUploaded] = useState(false);
-
-  const handleImageUpload = (e) => {
-    setThumbnail(e.target.files[0])
-
-    // console.log(e.target.files[0].name)
-    setImageUploaded(true);
   };
 
   return (

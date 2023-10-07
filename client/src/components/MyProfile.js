@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import './MyProfile.css';
 import Navbar from './Navbar'
-import { NavLink } from 'react-router-dom';
  
 const MyProfile = () => {
   const navigate = useNavigate();
@@ -11,34 +10,35 @@ const MyProfile = () => {
   const [uri, setUri] = useState('https://mgcfeni.edu.bd/midea/featuredimage/featuredimage2019-03-04-13-47-19_5c7d1e5732a77.jpg');
 
 
-  const callProfile = async () => { 
-    try {
-      const token = localStorage.getItem('token');
-      const mail = localStorage.getItem('mail');
-      if (!token) {
-        navigate('/login');
-      }
-      const response = await axios.get('https://india-aura.onrender.com/profile', {
-        params: {
-          mail: mail
-        }
-      });
-
-      const data = response.data.user;
-      console.log(data);
-      setUserDetails(data);
-      setUri(data.avatar.secure_url);
-
-    } catch (error) {
-      console.error(error);
-      navigate('/login'); // Navigate to login page
-    }
-  };
-
   useEffect(() => {
-    callProfile();
-  }, []);
-
+    const callProfile = async () => {
+      try {
+        const token = localStorage.getItem('token');
+        const mail = localStorage.getItem('mail');
+        if (!token) {
+          navigate('/login');
+          return; // Early return to prevent further execution
+        }
+        const response = await axios.get('https://india-aura.onrender.com/profile', {
+          params: {
+            mail: mail
+          }
+        });
+  
+        const data = response.data.user;
+        console.log(data);
+        setUserDetails(data);
+        setUri(data.avatar.secure_url);
+  
+      } catch (error) {
+        console.error(error);
+        navigate('/login'); // Navigate to the login page
+      }
+    };
+  
+    callProfile(); // Call the function immediately when the component mounts
+  }, [navigate]);
+  
   const logoutProfile = async (e) => {
     e.preventDefault();
     try {
@@ -56,14 +56,8 @@ const MyProfile = () => {
       console.error(error);
     }
   }
-  const ListService = () => {
-    navigate("/list-service");
-  }
   const Feedback = () => {
     navigate("/Feedback");
-  }
-  const BlogUpload=()=>{
-    navigate("/uploadblog");
   }
 
   return (
@@ -109,26 +103,27 @@ const MyProfile = () => {
 
       <div className="booking-card-container">
       <div className="booking-card">
-        <img src="https://i.pinimg.com/564x/60/44/71/604471ed304322decb60d7c52b4632a3.jpg" alt="Write Blog" />
-        <h2>Write Blog</h2>
-        <a href="/uploadblog"><button>Start Writing</button></a>
-      </div>
-      <div className="booking-card">
-        <img src="https://i.pinimg.com/564x/54/57/24/545724f929914db48a3d1964f983f755.jpg" alt="Tour Package" />
-        <h2>Book Tour Package</h2>
-        <a href="https://www.makemytrip.com/" target='_blank'><button>Book Now</button></a>
-      </div>
-      <div className="booking-card">
-        <img src="https://i.pinimg.com/564x/17/ea/f1/17eaf15d7a73220fbcaf6f669296b499.jpg" alt="Book Flight" />
-        <h2>Book Flight</h2>
-        <a href="https://www.makemytrip.com/" target='_blank'><button>Book Now</button></a>
-      </div>
-      <div className="booking-card">
-        <img src="https://i.pinimg.com/564x/fb/5e/d4/fb5ed42def009168081b2776b7708228.jpg" alt="Book Hotels" />
-        <h2>Book Hotels</h2>
-        <a href="https://www.airbnb.co.in/" target='_blank'><button>Book Now</button></a>
-      </div>
-    </div>
+  <img src="https://i.pinimg.com/564x/54/57/24/545724f929914db48a3d1964f983f755.jpg" alt="Tour Package" />
+  <h2>Book Tour Package</h2>
+  <a href="https://www.makemytrip.com/" target="_blank" rel="noopener noreferrer">
+    <button>Book Now</button>
+  </a>
+</div>
+<div className="booking-card">
+  <img src="https://i.pinimg.com/564x/17/ea/f1/17eaf15d7a73220fbcaf6f669296b499.jpg" alt="Book Flight" />
+  <h2>Book Flight</h2>
+  <a href="https://www.makemytrip.com/" target="_blank" rel="noopener noreferrer">
+    <button>Book Now</button>
+  </a>
+</div>
+<div className="booking-card">
+  <img src="https://i.pinimg.com/564x/fb/5e/d4/fb5ed42def009168081b2776b7708228.jpg" alt="Book Hotels" />
+  <h2>Book Hotels</h2>
+  <a href="https://www.airbnb.co.in/" target="_blank" rel="noopener noreferrer">
+    <button>Book Now</button>
+  </a>
+</div>
+</div>
       
     </>
   );

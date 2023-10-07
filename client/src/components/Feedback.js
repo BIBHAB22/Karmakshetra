@@ -1,10 +1,8 @@
 import React , { useState } from 'react'
 import Navbar from './Navbar'
 // import Services from './Services'
-import Footer from './Footer'
 import { useNavigate } from 'react-router-dom'
 import './Feedback.css';
-import home_doctor_pic from "./image/home_doctor_pic.jpg"
 import axios from 'axios';
 
 const Feedback = () => {

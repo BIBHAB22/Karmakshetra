@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
-import { NavLink } from 'react-router-dom';
 import Modal from 'react-bootstrap/Modal';
 import Button from 'react-bootstrap/Button';
 import './Wildlife.css'; // Make sure to create a CSS file for styling
 
 function MyVerticallyCenteredModal(props) {
-  const { imageUrl, onHide, wildlifeSpot } = props;
+  const { onHide, wildlifeSpot } = props;
 
   return (
     <Modal

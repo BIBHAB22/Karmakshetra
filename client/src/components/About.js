@@ -1,16 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from "./Navbar";
 import "./About.css";
-import { FaGithub, FaLinkedin } from "react-icons/fa6";
-import { BiLogoGmail } from "react-icons/bi";
 import Footer from './Footer'
 
 const AboutUsPage = () => {
-  const [openIndex, setOpenIndex] = useState(null);
-
-  const toggleFaq = (index) => {
-    setOpenIndex(prevIndex => (prevIndex === index ? null : index));
-  };
 
   return (
     <>

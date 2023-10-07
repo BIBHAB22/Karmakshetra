@@ -1,9 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './Navbar';
 import { NavLink } from 'react-router-dom';
-import Modal from 'react-modal';
 import './Dream_tour.css'; // Make sure to create a CSS file for styling
-import Cultural from './Cultural.js'
 import WholeIndia from "./image/WholeIndia.mp4"
 
 const tourismSpots = [
@@ -38,7 +36,6 @@ const tourismSpots = [
 ];
 
 const TourismPage = () => {
-  const [selectedSpot, setSelectedSpot] = useState(null);
 
   return (
     <>

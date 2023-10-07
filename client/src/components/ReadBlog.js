@@ -1,11 +1,9 @@
 // ReadBlog.js
-import React, { useState, useEffect } from 'react';
-import axios from 'axios';
+import React from 'react';
 import './ReadBlog.css';
 import Navbar from './Navbar';
 import tour_home from "./image/home_tour.png"
-import pointer from "./image/map-pointer.png"
-import { FcUpLeft } from "react-icons/fc";
+
 
 const ReadBlog = () => {
   // const [allblogs, setAllBlogs] = useState([]);
@@ -43,10 +41,27 @@ const ReadBlog = () => {
         ))}
       </div> */}
       <div className="blog_india"><img src={tour_home} alt="img" /></div>
-      <a href="https://medium.com/@seovueindia19/visiting-taj-mahal-the-story-of-love-best-taj-mahal-travel-blog-with-inside-information-ca14ff3cc1b4" target="_blank"><div className="point1"><span className='inner-pointer'>Taj Mahal</span></div></a>
-      <a href="https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703" target='_blank'><div className="point2"><span className='inner-pointer' >Durga Puja</span></div></a>
-      <a href="https://sandeepachetan.com/category/kashmir/" target='_blank'><div className="point3"><span className='inner-pointer'>Kashmir</span></div></a>
-      <a href="/https://keralablogexpress.com/" target="_blank"><div className="point4"><span className='inner-pointer'>Kerala</span></div></a>
+<a href="https://medium.com/@seovueindia19/visiting-taj-mahal-the-story-of-love-best-taj-mahal-travel-blog-with-inside-information-ca14ff3cc1b4" target="_blank" rel="noopener noreferrer">
+  <div className="point1">
+    <span className='inner-pointer'>Taj Mahal</span>
+  </div>
+</a>
+<a href="https://ich.unesco.org/en/RL/durga-puja-in-kolkata-00703" target='_blank' rel="noopener noreferrer">
+  <div className="point2">
+    <span className='inner-pointer'>Durga Puja</span>
+  </div>
+</a>
+<a href="https://sandeepachetan.com/category/kashmir/" target='_blank' rel="noopener noreferrer">
+  <div className="point3">
+    <span className='inner-pointer'>Kashmir</span>
+  </div>
+</a>
+<a href="https://keralablogexpress.com/" target="_blank" rel="noopener noreferrer">
+  <div className="point4">
+    <span className='inner-pointer'>Kerala</span>
+  </div>
+</a>
+
 
       <div className="diver">
         Diversity <span className="d1">of</span> <span className="d2">India</span>

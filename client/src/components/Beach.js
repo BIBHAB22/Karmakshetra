@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
 import Navbar from './Navbar';
 import './Beach.css'
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function MyVerticallyCenteredModal(props) {
-  const { imageUrl, onHide, beach } = props;
+  const { beach } = props;
   return (
     <Modal
       {...props}
@@ -21,11 +20,11 @@ function MyVerticallyCenteredModal(props) {
       </Modal.Header>
       <Modal.Body>
       <img
-          src={props.imageUrl}
-          alt="Image Alt Text"
-          className="modal-image"
-        />
-        <h4>{beach.name} Tour Details:</h4>
+        src={props.imageUrl}
+        alt="A scenic view of nature"
+        className="modal-image"
+      />
+      <h4>{beach.name} Tour Details:</h4>
         <p>{beach.details}</p>
       </Modal.Body>
       <Modal.Footer>
@@ -127,7 +126,7 @@ const BeachPage = () => {
   
     const filteredBeaches = beachesData.filter((beach) =>
     beach.name.toLowerCase().includes(searchTerm.toLowerCase()) &&
-    (tourDuration === '' || parseInt(beach.Duration) == parseInt(tourDuration))
+    (tourDuration === '' || parseInt(beach.Duration) === parseInt(tourDuration))
   );
   return (
     <>

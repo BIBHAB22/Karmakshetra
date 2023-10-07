@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Kashmir.css';
 import Navbar from './Navbar';
 
-function Durga_puja() {
+function DurgaPuja() {
   return (
     <>
     <Navbar/>
@@ -29,4 +29,4 @@ Central to Durga Puja is the goddess herself, portrayed as a fierce embodiment o
   );
 }
 
-export default Durga_puja;
+export default DurgaPuja;

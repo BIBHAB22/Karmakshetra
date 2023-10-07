@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
-import { NavLink } from 'react-router-dom';
 import { Button, Modal } from 'react-bootstrap';
 import './Cultural.css'; // Make sure to create a CSS file for styling
 
@@ -74,7 +73,7 @@ const tourismSpots = [
 ];
 
 function MyVerticallyCenteredModal(props) {
-  const { imageUrl, onHide, spot } = props;
+  const { spot } = props;
   return (
     <Modal
       {...props}
@@ -98,7 +97,7 @@ function MyVerticallyCenteredModal(props) {
   );
 }
 
-const Cultural_page = () => {
+const CulturalPage = () => {
   const [selectedSpot, setSelectedSpot] = useState(null);
   const [modalShow, setModalShow] = useState(false);
 
@@ -140,4 +139,4 @@ const Cultural_page = () => {
     </>
   );
 };
-export default Cultural_page;
+export default CulturalPage;

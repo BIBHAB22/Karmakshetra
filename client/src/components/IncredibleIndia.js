@@ -1,12 +1,11 @@
 import React, { useState } from 'react';
 import Navbar from './Navbar';
-import { NavLink } from 'react-router-dom';
-import './Incredible_India.css'; // Make sure to create a CSS file for styling
+import './IncredibleIndia.css'; // Make sure to create a CSS file for styling
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
 function MyVerticallyCenteredModal(props) {
-  const { imageUrl, onHide, spot } = props;
+  const { spot } = props;
   return (
     <Modal
       {...props}
@@ -105,7 +104,7 @@ const tourismSpots = [
   
 ];
 
-const Incredible_India = () => {
+const IncredibleIndia = () => {
   const [selectedSpot, setSelectedSpot] = useState(null);
   const [modalShow, setModalShow] = useState(false);
 
@@ -149,4 +148,4 @@ const Incredible_India = () => {
   );
 };
 
-export default Incredible_India;
+export default IncredibleIndia;

@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Navbar from './Navbar';
 import { NavLink } from 'react-router-dom';
-import Modal from 'react-modal';
 import './vacations.css'; // Make sure to create a CSS file for styling
 
 const tourismSpots = [
@@ -32,8 +31,7 @@ const tourismSpots = [
   },
 ];
 
-const Vacation_page = () => {
-  const [selectedSpot, setSelectedSpot] = useState(null);
+const VacationPage = () => {
 
   return (
     <>
@@ -61,4 +59,4 @@ const Vacation_page = () => {
   );
 };
 
-export default Vacation_page;
+export default VacationPage;
