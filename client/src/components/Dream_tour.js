@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Navbar from './Navbar';
 import { NavLink } from 'react-router-dom';
-import './Dream_tour.css'; // Make sure to create a CSS file for styling
+import Modal from 'react-modal';
+import './Dream_tour.css';
+import Cultural from './Cultural.js'
 import WholeIndia from "./image/WholeIndia.mp4"
 
 const tourismSpots = [
@@ -15,7 +17,7 @@ const tourismSpots = [
   {
     id: 2,
     link:'./Cultural.js',
-    name: 'Cultural Tour',
+    name: 'Religious Tour',
     description: 'The temple is a place where prayers turn into miracles',
     imageUrl: 'https://i.pinimg.com/564x/3a/13/68/3a13681ec70b40d88953c058c227909a.jpg',
   },
@@ -36,6 +38,7 @@ const tourismSpots = [
 ];
 
 const TourismPage = () => {
+  const [selectedSpot, setSelectedSpot] = useState(null);
 
   return (
     <>
@@ -47,7 +50,7 @@ const TourismPage = () => {
             Your browser does not support the video tag.
           </video>
         </div>
-        <h1>Incredible India</h1>
+        <h1>Dream Tour</h1>
           <div className="cardDisplay">
           {tourismSpots.map((spot) => (
             <div key={spot.id} class="card">
